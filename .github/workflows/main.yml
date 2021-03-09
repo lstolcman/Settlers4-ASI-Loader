@@ -5,7 +5,7 @@ env:
   SLN_FILE_NAME: 'S4_ASI_Loader.sln'
 
 jobs:
-  build-asi-debug:
+  build-debug:
     # https://github.com/actions/virtual-environments#available-environments
     runs-on: windows-latest
     steps:
@@ -27,7 +27,7 @@ jobs:
         path: |
           Debug/
 
-  build-asi-release:
+  build-release:
     # https://github.com/actions/virtual-environments#available-environments
     runs-on: windows-latest
     steps:
@@ -47,4 +47,4 @@ jobs:
       with:
         name: build-release
         path: |
-          Release/
+          Release/*.exe
