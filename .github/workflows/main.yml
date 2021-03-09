@@ -47,4 +47,4 @@ jobs:
       with:
         name: build-release
         path: |
-          Release/*.asi
+          Release/
